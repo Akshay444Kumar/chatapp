@@ -9,6 +9,14 @@ hooks:
     - location: scripts/stop.sh
       timeout: 300
       runas: ubuntu
+  BeforeInstall:
+    - location: scripts/addFile.sh
+      timeout: 300
+      runas: ubuntu
+  AfterInstall:
+    - location: scripts/deleteFile.sh
+      timeout: 300
+      runass: ubuntu
   ApplicationStart:
     - location: scripts/start.sh
       timeout: 300
