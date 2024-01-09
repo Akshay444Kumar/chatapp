@@ -1,4 +1,4 @@
-cd new_chatapp/
+cd /home/ubuntu/new_chatapp/
 virtualenv -p /usr/bin/python3 venv
 source venv/bin/activate
 
