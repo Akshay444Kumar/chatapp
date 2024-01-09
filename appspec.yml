@@ -2,10 +2,14 @@ version: 0.0
 os: linux
 files:
   - source: / 
-    destination: /home/ubuntu/
+    destination: /home/ubuntu/chatapp
 hooks:
-  BeforeInstall:
-    - location: scripts/installApplication.sh
+  ApplicationStop:
+    - location: scripts/stop.sh
+      timeout: 300
+      runas: ubuntu
+  ApplicationStart:
+    - location: scripts/start.sh
       timeout: 300
       runas: ubuntu
 
