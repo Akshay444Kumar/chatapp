@@ -106,7 +106,7 @@ DATABASES = {
         'NAME': 'CHATDB',
         'USER': 'CHATDBUSER',
         'PASSWORD': 'CHATDBPASSWORD',
-        'HOST': CHATDBHOST',
+        'HOST': 'CHATDBHOST',
         'PORT': '3306',
     }
 }
