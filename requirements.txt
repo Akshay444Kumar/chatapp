@@ -24,7 +24,6 @@ idna==2.8
 incremental==17.5.0
 msgpack==0.5.2
 oauthlib==3.0.1
-plumber==1.5
 pycparser==2.19
 PyHamcrest==1.9.0
 PyJWT==1.7.1
